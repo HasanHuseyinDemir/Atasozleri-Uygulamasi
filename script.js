@@ -219,8 +219,8 @@ function renkdegistir(){
 
 function displayQuote(){
     let number = Math.floor(Math.random()*quotes.length);
-    quoteAuthor.innerHTML=quotes[number].name;
-    quote.innerHTML=quotes[number].quote;
+    quoteAuthor.textContent=quotes[number].name;
+    quote.textContent=quotes[number].quote;
     console.log(number);
     renkdegistir();
 }
